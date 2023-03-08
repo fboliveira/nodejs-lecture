@@ -4,6 +4,8 @@ import { GetByIdEstadoController } from "../controller/estados/GetByIdEstadoCont
 
 import { CreateEstadoController } from "../controller/estados/CreateEstadoController.js";
 
+import { UpdateEstadoController } from "../controller/estados/UpdateEstadoController.js";
+
 const estadoRouter = Router();
 
 // CRUD - estados
@@ -21,6 +23,8 @@ const createEstadoController = new CreateEstadoController();
 estadoRouter.post('/estados', createEstadoController.handle);
 
 // Update
+const updateEstadoController = new UpdateEstadoController();
+estadoRouter.put('/estados', updateEstadoController.handle);
 
 // Delete
 

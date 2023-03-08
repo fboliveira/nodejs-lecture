@@ -11,3 +11,15 @@ Content-Type: application/json
     "sigla": "RJ"
 
 }
+
+###
+
+PUT http://localhost:4444/estados
+Content-Type: application/json
+
+{
+    "id": 3,
+    "nome": "Rio de Janeiro",
+    "sigla": "RJ"
+
+}
