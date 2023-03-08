@@ -23,3 +23,12 @@ Content-Type: application/json
     "sigla": "RJ"
 
 }
+
+###
+
+DELETE http://localhost:4444/estados
+Content-Type: application/json
+
+{
+    "id": 3
+}

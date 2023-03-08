@@ -6,6 +6,8 @@ import { CreateEstadoController } from "../controller/estados/CreateEstadoContro
 
 import { UpdateEstadoController } from "../controller/estados/UpdateEstadoController.js";
 
+import { DeleteEstadoController } from "../controller/estados/DeleteEstadoController.js";
+
 const estadoRouter = Router();
 
 // CRUD - estados
@@ -27,6 +29,7 @@ const updateEstadoController = new UpdateEstadoController();
 estadoRouter.put('/estados', updateEstadoController.handle);
 
 // Delete
-
+const deleteEstadoController = new DeleteEstadoController();
+estadoRouter.delete('/estados', deleteEstadoController.handle);
 
 export { estadoRouter };
