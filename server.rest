@@ -1,0 +1,13 @@
+GET http://localhost:4444/estados
+
+###
+
+POST http://localhost:4444/estados
+Content-Type: application/json
+
+{
+
+    "nome": "Rio de Janeiro",
+    "sigla": "RJ"
+
+}
