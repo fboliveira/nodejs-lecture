@@ -45,3 +45,6 @@ Content-Type: application/json
 
 ###
 GET http://localhost:4444/cidades
+
+###
+GET http://localhost:4444/cidades/1
