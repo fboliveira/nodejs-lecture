@@ -38,7 +38,10 @@ POST http://localhost:4444/cidades
 Content-Type: application/json
 
 {
-    "nome" : "Belo Horizonte",
-    "estado_id": 1
+    "nome" : "São Paulo",
+    "estado_id": 2
 
 }
+
+###
+GET http://localhost:4444/cidades
