@@ -38,7 +38,7 @@ POST http://localhost:4444/cidades
 Content-Type: application/json
 
 {
-    "nome" : "São Paulo",
+    "nome" : "Itaunas",
     "estado_id": 2
 
 }
@@ -48,3 +48,14 @@ GET http://localhost:4444/cidades
 
 ###
 GET http://localhost:4444/cidades/1
+
+###
+PUT http://localhost:4444/cidades
+Content-Type: application/json
+
+{
+    "id": 4,
+    "nome" : "Itaúna",
+    "estado_id": 1
+
+}
