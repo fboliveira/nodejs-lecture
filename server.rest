@@ -32,3 +32,13 @@ Content-Type: application/json
 {
     "id": 3
 }
+
+###
+POST http://localhost:4444/cidades
+Content-Type: application/json
+
+{
+    "nome" : "Belo Horizonte",
+    "estado_id": 1
+
+}
