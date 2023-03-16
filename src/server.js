@@ -2,12 +2,14 @@ import express from 'express';
 import { mainRouter } from './routes/main.js';
 import { estadoRouter } from './routes/estados.js';
 import { cidadeRouter } from './routes/cidades.js';
+import cors from "cors";
 
 const server = express();
 
 const PORT = 4444;
 
 server.use(express.json());
+server.use(cors());
 
 // Routes
 server.use(mainRouter);
